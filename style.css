@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: rgb(225, 186, 153);
+    --dark-orange: rgb(167, 124, 124);
+    --pink: rgba(255, 255, 255, 0.519);
+}
+
+body {
+    background: var(--orange);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-grid {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background: var(--pink);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--dark-orange);
+    font-size: 3rem;
+    font-family: 'Prompt', Helvetica, Arial, sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
