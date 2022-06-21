@@ -11,16 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <div class="game-grid">
-        <div class="game-card">X</div>
-        <div class="game-card">X</div>
-        <div class="game-card">O</div>
-        <div class="game-card">X</div>
-        <div class="game-card">X</div>
-        <div class="game-card">O</div>
-        <div class="game-card">X</div>
-        <div class="game-card">X</div>
-        <div class="game-card">X</div>
+    <div class="container">
+        <div class="players">
+            <div class="player-one player-card turn">player 1</div>
+            <div class="player-two player-card inactive">player 2</div>
+        </div>
+        <div class="game-grid">
+            <div id="0" class="game-card"></div>
+            <div id="1" class="game-card"></div>
+            <div id="2" class="game-card"></div>
+            <div id="3" class="game-card"></div>
+            <div id="4" class="game-card"></div>
+            <div id="5" class="game-card"></div>
+            <div id="6" class="game-card"></div>
+            <div id="7" class="game-card"></div>
+            <div id="8" class="game-card"></div>
+        </div>
+        <div class="reset">
+            <button class="player-card reset-btn">reset</button>
+        </div>
     </div>
     <script src="app.js" defer></script>
 </body>
